@@ -5,6 +5,12 @@ body {
   margin: 0;
   padding: 0;
 }
+header {
+  background-color: rgb(255, 216, 107);
+  padding: 20px;
+  text-align: center;
+}
+
 
 .grid-container {
   display: grid;
@@ -16,6 +22,7 @@ body {
   background-color: rgb(152, 176, 199);
   padding: 20px;
   text-align: center;
+  text-decoration: dotted;
 }
 @media (max-width: 200px) {
   .grid-container {
@@ -48,4 +55,9 @@ body {
   .responsive-box {
     background-color: lightseagreen;
   }
+}
+footer {
+  background-color: rgb(255, 216, 107);
+  padding: 20px;
+  text-align: center;
 }
