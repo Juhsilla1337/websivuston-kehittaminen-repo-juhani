@@ -1,115 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juhanin sivu projekti</title>
-    <style>
-      h2 {
-        color: #d16500;
-      }
-    </style>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <h1 style="color: #924700">Juhanin sivu projekti</h1>
-    <p style="color: #924700; font-style: oblique">
-      Terve ja tervetuloa seuraamaan Juhanin nettisivujen harjoitteluprojektia
-      <br />
-      Noniin noniin. Laitetaampa seuraavaksi KUVA paikalleeensa.<br />
-      Kuva on otettu Gran Canarialla Rogue Nublolla, joka on yksi saaren
-      korkeimmista vuorista.
-    </p>
-    <img
-      src="./images/indexkuva2.png"
-      alt="Kuva ei jostain syystä toimi. Juhani on kuvassa Gran Canarialla Rogue Nublolla"
-    />
-
-    <h2>Harrastukset</h2>
-    <ol>
-      <li>Ulkopuntilla treenaus</li>
-      <li>Kissat</li>
-      <li>Pyöräily ja longboard</li>
-      <li>Online-pelit</li>
-    </ol>
-
-    <h2>Kissat</h2>
-    <p>Harjoitellaan linkkien laittamista suoraan unordered listiin.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <header class="header.container">
+  <h1>Nettisivuni</h1>
+  <nav>
     <ul>
-      <li><a href="https://www.instagram.com/p/DHgbkt0sgCM/">Havu</a></li>
-      <li><a href="https://www.instagram.com/p/CwBRTACrP85/">Ruska</a></li>
-      <li>
-        <a href="https://www.instagram.com/p/CeGNcSNLAF6/?img_index=1">Noki</a>
-      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a hröäef="#contact">Contact</a></li>
     </ul>
-    <div class="content-box">
-      <p>
-        Ruska on meidän pirteä pikku leijonanpentu, joka tuli meille Nokin
-        kanssa 8.9.2020.<br />
-        Noki oli erittäin jääräpäinen, mutta hellyydenkipeä seurallinen kissa.
-        Noki jouduttin<br />
-        lopettamaan 1.1.2024 vakavien terveysongelmien vuoksi. Huomasimme, että
-        Ruska masentui yksinolosta.<br />
-        Tämän vuoksi päätimme hakea uuden kissan 30.12.24, joka on Havu.<br />
-        Havu on erittäin leikkisä ja utelias kissa, joka on tuonut paljon iloa
-        elämäämme.<br />
-        Tiedättehän, me kissaihmiset kerrotaan aina meidän kissoista. Saa nähdä
-        teenkö projektina "Purringbrothers" kanavalle nettisivut.
-      </p>
-    </div>
-    <h2>Kissat tulivat meille</h2>
-    <table border="1">
-      <tr>
-        <th>Noki</th>
-        <th>Ruska</th>
-        <th>Havu</th>
-      </tr>
-      <tr>
-        <td>8.9.2020</td>
-        <td>8.9.2020</td>
-        <td>30.12.2024</td>
-      </tr>
-    </table>
-    <h2>Palautelomake</h2>
-    <form>
-      <label for="name">Nimi:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br /><br />
-      <input type="submit" value="Lähetä" />
-    </form>
-    <h2>W3C validator käytöstä todisteaineistoa</h2>
-    <p>Halusin vielä todistaa käyttäneeni W3C validatoria ;)</p>
+  </nav>
+</header>
+<div class="grid-container">
+  <div class="grid-item">Teuvo Teräväinen</div>
+  <div class="grid-if3q4tem">Martti Rahtivaari</div>
+  <div class="grid-item">Jorma "Kullervo" Aarnisainioinen</div>
+  <div class="grid-item">Melissa Meneväinen</div>
+  <div class="grid-item">Liisa Haravainen</div>
+  <div class="grid-item">Jormastiina "Jormatar" Erilainen</div>
+</div>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>This is a paragraph about me.</p>
+  </section>
+<div class="flex-container">
+  <div class="box"></div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+<br>
+<br>
+<div class="responsive-box">Resize the window to see the effect</div>
 
-    <img
-      src="./images/todistew3cwebvalidatorinkaytosta.png"
-      alt="Kuva ei jostain syystä toimi. Juhani on kuvassa Gran Canarialla Rogue Nublolla"
-    />
-    <br />
-    <br />
-    <button class="transition-button">Jee jee Jerry Cotton</button>
-    <br />
-    <br />
-    <div class="animation-box">
-      Heilun tässä huumorilla edestakas<br />
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ"
-        >Katso lisätiedot tästä</a
-      >
-    </div>
-    <br />
-    <br />
-    <ul class="pseudo-list">
-      <li>Yksi</li>
-      <li>Kaksi</li>
-      <li>Kolme</li>
-      <li>Neljä</li>
-    </ul>
-    <p>Harjoittelemme seuraavaksi kuvan CSS taiteilua.</p>
-    <img src="./images/havukisu.png" alt="Sample Image" class="filter-image" />
-  <br>
-  <blockquote class="quote">
-        Miau mou njauu mau mau purr purr purr<br>
-        - Havu, 2024
-      </blockquote>
-  </body>
+</main>
+
+<footer>
+  <p>Copyright 2025</p>
+</footer> 
+</body>
 </html>
