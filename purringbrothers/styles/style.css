@@ -1,0 +1,317 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8ede3;
+  color: #2c211b;
+  font-family: "comfortaa", sans-serif;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  padding: 10px;
+}
+
+/* =========================
+   HERO / HEADER
+========================= */
+
+header {
+  color: #ffdc9c;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  color: #ffdc9c;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-container {
+  background-color: #c47e5e;
+  padding: 10px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-container a {
+  color: #ffdc9c;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav-container a:hover {
+  color: #ffb936;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #ffdc9c;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-container nav {
+    display: none;
+  }
+
+  .nav-container.active nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-container a {
+    display: block;
+    margin: 0;
+  }
+}
+
+/* =========================
+   CONTENT BOX (index etc.)
+========================= */
+
+.content {
+  max-width: 800px;
+  padding: 10px;
+  background-color: #fda870;
+  color: #7e4d37;
+  border: 2px solid #e89e6c;
+  border-radius: 12px;
+}
+.content-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.filter-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+
+  filter: grayscale(60%) blur(1px) brightness(85%);
+  transition: filter 0.6s ease;
+}
+
+/* desktop hover + mobile tap */
+.filter-image:hover,
+.filter-image:active {
+  filter: grayscale(0%) blur(0px) brightness(100%);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #b96f4f;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* =========================
+   BLOG HEADER (IMAGE + TITLE)
+========================= */
+
+.blog-header {
+  position: relative;
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+.blogbanner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.blog-h2 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Quicksand", sans-serif;
+  color: #ffdc9c;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.blog-post {
+  padding: 10px;
+  margin: 0;
+  background-color: #fda870;
+  color: #7e4d37;
+  border: 2px solid #e89e6c;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #b96f4f;
+  color: #ffdc9c;
+  padding: 10px;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+}
+
+footer .fa-instagram {
+  color: #ffdc9c;
+  font-size: 30px;
+}
+
+footer .fa-instagram:hover {
+  color: #ffb936;
+}
+
+/* =========================
+   GALLERY STUFF
+========================= */
+.gallery {
+  width: 100%;
+  max-width: 800px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 420px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 12px;
+  
+
+  box-sizing: border-box;
+}
+.ruska-gallery img {
+  border: 2px solid #d88b5c;
+}
+.havu-gallery img {
+  border: 2px solid #7b5a4a;
+}
+.noki-gallery img {
+  border: 2px solid #9a9a9a;
+}
+
+/* =================
+CONTACT PAGE FORM CSS
+====================*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+
+  border: 2px solid #e89e6c;
+  border-radius: 10px;
+
+  font-family: "Comfortaa", sans-serif;
+
+  background-color: #fff;
+  color: #2c211b;
+}
+
+.contact-form button {
+  padding: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #c47e5e;
+  color: #ffdc9c;
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #b96f4f;
+}
